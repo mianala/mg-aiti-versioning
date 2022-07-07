@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+body {
+  margin: 0;
+}
+
+main::after {
+  content: "";
+  width: 50%;
+  min-height: 100vh;
+  background: hsl(19, 100%, 86%)
+    url(https://mianala.github.io/smooth-skin-shop/assets/Grey-and-Pink-Skin-Care-Tips.png)
+    no-repeat bottom left;
+  background-size: clamp(400px, 100vw, 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+article {
+  padding: 2rem;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+article .tag {
+  font-family: "Arvo";
+  font-weight: bolder;
+  color: #b3b3b3;
+  letter-spacing: 0.2rem;
+}
+article h1 {
+  margin: 1.5rem 0px;
+  color: black;
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+article h1 span {
+  color: hsl(0, 66%, 59%);
+}
+article .description {
+  font-family: "Poppins";
+  color: #492923;
+  font-size: clamp(24px, 1.5vw, 26px);
+}
+article .price {
+  line-height: 2rem;
+  font-size: 3rem;
+  font-family: "Poppins";
+}
+article .price var {
+  color: hsl(19, 100%, 86%);
+  font-family: "Raleway";
+  font-style: normal;
+}
+article .social-media a {
+  color: black;
+  text-decoration: none;
+  font-family: "Open sans";
+}
+
+button {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: larger;
+  border: transparent;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(100, 66%, 59%);
+}
+
+/* some comments in feature one */
+
+@media screen and (max-width: 555px) {
+  article .price {
+    color: hsl(19, 100%, 86%);
+  }
+  article .price var {
+    color: black;
+  }
+}

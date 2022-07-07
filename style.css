@@ -82,7 +82,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: hsl(100, 66%, 59%);
+  background-color: hsl(0, 66%, 59%);
 }
 
 /* some comments in feature one */
